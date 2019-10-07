@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contend">
+        <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">REGISTRO</h1>
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" id="pnombre" class="form-control" placeholder="Primer Nombre">
+                    <span class="errornom1" aria-live="polite"></span>
+                  </div>
+                  <div class="col">
+                    <input type="text" id="pnombre2" class="form-control" placeholder="Segundo Nombre" required="required"
+                    data-validation-required-message="Porfavor ingrese su segundo nombre.">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                      <input type="text" id="papellido" class="form-control" placeholder="Primer Apellido" required="required"
+                      data-validation-required-message="Porfavor ingrese su primer apellido.">
+                    </div>
+                    <div class="col">
+                      <input type="text" id="sapellido" class="form-control" placeholder="Segundo Apellido" required="required"
+                      data-validation-required-message="Porfavor ingrese su segundo apellido.">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" id="icodigo"class="form-control" placeholder="Codigo" required="required"
+                      data-validation-required-message="Porfavor ingrese su codigo.">
+                    </div>
+                    <div class="col">
+                      <input type="text" id="numcelular" class="form-control" placeholder="Numero Celular" required="required"
+                      data-validation-required-message="Porfavor ingrese su numero de celular">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                         
+                      <!--<label for="inputEmail4">Email</label>-->
+                      <input type="email" id="correo" class="form-control" id="inputEmail4" placeholder="Email" required="required"
+                      data-validation-required-message="Porfavor ingrese su email.">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <!--<label for="inputPassword4">Password</label>-->
+                      <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña" required="required"
+                      data-validation-required-message="Porfavor ingrese su contraseña.">
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-warning">Registrar</button>
+              </form>
+              <!-- hr es una linea  -->
+              <hr />
+
+              <a href="login.html" class="card-link">Ingresar</a>
+              <a href="../index.html" class="card-link">Volver</a>
+            </div>
+          </div>
+    </div>  
+    <script src="../js/Estiloscampos.js"></script>
+</body>
+</html>
